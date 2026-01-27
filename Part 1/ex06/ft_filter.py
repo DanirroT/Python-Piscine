@@ -1,4 +1,0 @@
-
-
-def ft_filter():
-	
