@@ -6,33 +6,19 @@
 #    By: dmota-ri <dmota-ri@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/27 16:26:12 by dmota-ri          #+#    #+#              #
-#    Updated: 2026/02/01 12:27:22 by dmota-ri         ###   ########.fr        #
+#    Updated: 2026/02/01 13:36:23 by dmota-ri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 
-from S1E9 import Character, Stark
+from DiamondTrap import King
+Joffrey = King("Joffrey")
+print(Joffrey.__dict__)
+Joffrey.set_eyes("blue")
+Joffrey.set_hairs("light")
+print(Joffrey.get_eyes())
+print(Joffrey.get_hairs())
+print(Joffrey.__dict__)
 
 
-Ned = Stark("Ned")
-print(Ned.__dict__)
-print(Ned.is_alive)
-Ned.die()
-print(Ned.is_alive)
-print(Ned.__doc__)
-print(Ned.__init__.__doc__)
-print(Ned.die.__doc__)
-print("---")
-Lyanna = Stark("Lyanna", False)
-print(Lyanna.__dict__)
-
-
-#	{'first_name': 'Ned', 'is_alive': True}
-#	True
-#	False
-#	Your docstring for Class
-#	Your docstring for Constructor
-#	Your docstring for Method
-#	---
-#	{'first_name': 'Lyanna', 'is_alive': False}

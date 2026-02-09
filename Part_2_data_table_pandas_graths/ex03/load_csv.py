@@ -6,36 +6,26 @@
 #    By: dmota-ri <dmota-ri@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/27 16:26:10 by dmota-ri          #+#    #+#              #
-#    Updated: 2026/01/27 19:02:37 by dmota-ri         ###   ########.fr        #
+#    Updated: 2026/01/30 19:28:38 by dmota-ri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-import pamdas as pd
+import pandas as pd
 
-
-def load(path: str) -> Dataset:
+def load(path: str): # -> Dataset:
+	"""
+	Docstring for load()
+	
+	:param path: Description
+	:type path: str - Accepted formats is .csv
+	:returns: pd.Dataset - The table as a Pandas Dataset
+	"""
 	try:
-		table = pd.open_csv("./" + path)
+		table = pd.read_csv(path)
 	except Exception as e:
-		print(f"Error loading image: {e}")
+		print(f"Error loading table: {e}")
 		return None
-	
-	height = len(table)
-	width = len(table[1])
-	
-	shape = (height, width)
-	
-	print(f"Loading dataset of dimensions {shape}")
-
-#	print(f"[[{f"{image[i][j] for j in range(height)}..." for i in range(min(3, height))}]]")
-	
-	print(table)
-	
+	shape = table.shape
+	print(f"Loading dataset of dimensions {shape}")	
+	table = table.set_index(table.columns[0])
 	return table
-
-
-
-print(load("life_expectancy_years.csv"))
-
-
-

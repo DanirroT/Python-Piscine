@@ -6,7 +6,7 @@
 #    By: dmota-ri <dmota-ri@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/27 16:26:14 by dmota-ri          #+#    #+#              #
-#    Updated: 2026/01/27 22:06:52 by dmota-ri         ###   ########.fr        #
+#    Updated: 2026/01/30 18:11:41 by dmota-ri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,6 @@ def ft_load(path: str) -> np.array:
 	
 	print(f"The shape of image is: {shape}", end="")
 	if shape[2] == 1:
-		print(f" or {str((height, width))}", end="")
+		print(f" or {str((shape[0], shape[1]))}", end="")
 	print()
 	return image

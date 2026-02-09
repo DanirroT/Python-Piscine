@@ -6,7 +6,7 @@
 #    By: dmota-ri <dmota-ri@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/27 16:26:10 by dmota-ri          #+#    #+#              #
-#    Updated: 2026/02/01 13:50:20 by dmota-ri         ###   ########.fr        #
+#    Updated: 2026/02/01 12:47:28 by dmota-ri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,7 @@ from abc import ABC, abstractmethod
 
 class Character(ABC):
 	"""An Abstrach Class to represent a Character.
-Requires first_name as parameters.
-may take is_alive as parameters."""
+Takes first_name and is_alive as parameters."""
 	
 	first_name: str
 	is_alive: bool
@@ -33,7 +32,7 @@ may take is_alive as parameters."""
 class Stark(Character):
 	"""A Class to represent a Character.
 Requires first_name as parameters.
-may take is_alive as parameters."""
+may take is_alive parameters."""
 	def __init__(self, first_name: str, is_alive: bool = True) -> None:
 		"""Constructor for Stark Class."""
 		super().__init__(first_name, is_alive)	
