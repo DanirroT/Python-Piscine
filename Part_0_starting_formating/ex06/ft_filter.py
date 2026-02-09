@@ -1,31 +1,19 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    ft_filter.py                                       :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: dmota-ri <dmota-ri@student.42lisboa.com    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/26 20:21:19 by dmota-ri          #+#    #+#              #
-#    Updated: 2026/01/26 20:21:20 by dmota-ri         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 
 #def is_digit_str(string):
-#	for char in string:
-#		if char.isdigit() == False and char != ' ':
-#			return False
-#	return True
+# for char in string:
+#  if char.isdigit() == False and char != ' ':
+#      return False
+# return True
 #
 #def is_digit_char(char):
-#	return char.isdigit()
+# return char.isdigit()
 
 
 def ft_filter(function, iterable):
-	"""filter(function or None, iterable) --> filter object\n
+    """filter(function or None, iterable) --> filter object\n
 Return an iterator yielding those items of iterable for which function(item)
 is true. If function is None, return the items that are true."""
-	return (item for item in iterable if function(item))
+    return (item for item in iterable if function(item))
 
 
 #strings = ["1234 5678 919", "abcd efgh ijkl", "12ab 34cd 56ef", "!!@@ ##$$ %%^^"]

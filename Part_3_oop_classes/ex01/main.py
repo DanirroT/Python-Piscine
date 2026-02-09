@@ -1,16 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    main.py                                            :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: dmota-ri <dmota-ri@student.42lisboa.com    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/27 16:26:12 by dmota-ri          #+#    #+#              #
-#    Updated: 2026/02/01 12:36:49 by dmota-ri         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
-
 
 from S1E7 import Baratheon, Lannister
 
@@ -29,7 +16,7 @@ print(Cersei.__str__) #<bound method Lannister.__str__ of Vector: ('Lannister', 
 print(Cersei.is_alive) #True
 print("---") #---
 Jaine = Lannister.create_lannister("Jaine", True)
-print(f"Name : {Jaine.first_name, type(Jaine).__name__}, Alive : {Jaine.is_alive}") #Name : ('Jaine', 'Lannister'), Alive : True
+print(f"Name: {Jaine.first_name, type(Jaine).__name__}, Alive: {Jaine.is_alive}") #Name: ('Jaine', 'Lannister'), Alive: True
 
 
 

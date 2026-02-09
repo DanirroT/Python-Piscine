@@ -1,19 +1,5 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    main.py                                            :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: dmota-ri <dmota-ri@student.42lisboa.com    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/27 16:26:12 by dmota-ri          #+#    #+#              #
-#    Updated: 2026/02/01 12:27:22 by dmota-ri         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
-
 
 from S1E9 import Character, Stark
-
 
 Ned = Stark("Ned")
 print(Ned.__dict__)
@@ -28,11 +14,11 @@ Lyanna = Stark("Lyanna", False)
 print(Lyanna.__dict__)
 
 
-#	{'first_name': 'Ned', 'is_alive': True}
-#	True
-#	False
-#	Your docstring for Class
-#	Your docstring for Constructor
-#	Your docstring for Method
-#	---
-#	{'first_name': 'Lyanna', 'is_alive': False}
+# {'first_name': 'Ned', 'is_alive': True}
+# True
+# False
+# Your docstring for Class
+# Your docstring for Constructor
+# Your docstring for Method
+# ---
+# {'first_name': 'Lyanna', 'is_alive': False}

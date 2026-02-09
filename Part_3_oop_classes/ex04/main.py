@@ -1,5 +1,4 @@
 
-
 from ft_calculator import calculator
 
 a = [5, 10, 2]
